@@ -1,0 +1,128 @@
+// ============================================
+// NEXUS GAMES - SCSS Variables
+// ============================================
+
+// Colors
+$color-primary: #00F0FF;        // Neon Cyan
+$color-secondary: #7B2CBF;      // Purple
+$color-accent: #9D4EDD;         // Light Purple
+$color-dark: #0A0A0F;           // Deep Black
+$color-darker: #050508;         // Darker Black
+$color-light: #E0E0E0;          // Light Text
+$color-muted: #6B7280;          // Muted Text
+$color-white: #FFFFFF;
+
+// Color variations
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
+$gradient-dark: linear-gradient(180deg, $color-dark 0%, $color-darker 100%);
+$gradient-glow: radial-gradient(circle at center, rgba($color-primary, 0.15) 0%, transparent 70%);
+$gradient-holographic: linear-gradient(
+  135deg,
+  rgba($color-primary, 0.5) 0%,
+  rgba($color-secondary, 0.5) 25%,
+  rgba($color-accent, 0.5) 50%,
+  rgba($color-secondary, 0.5) 75%,
+  rgba($color-primary, 0.5) 100%
+);
+
+// Typography
+$font-heading: 'Orbitron', 'Rajdhani', sans-serif;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+// Font sizes
+$fs-xs: 0.75rem;      // 12px
+$fs-sm: 0.875rem;     // 14px
+$fs-base: 1rem;       // 16px
+$fs-md: 1.125rem;     // 18px
+$fs-lg: 1.25rem;      // 20px
+$fs-xl: 1.5rem;       // 24px
+$fs-2xl: 2rem;        // 32px
+$fs-3xl: 2.5rem;      // 40px
+$fs-4xl: 3rem;        // 48px
+$fs-5xl: 4rem;        // 64px
+$fs-6xl: 5rem;        // 80px
+
+// Font weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-black: 900;
+
+// Line heights
+$lh-tight: 1.1;
+$lh-normal: 1.5;
+$lh-relaxed: 1.75;
+
+// Spacing
+$spacing-xs: 0.25rem;   // 4px
+$spacing-sm: 0.5rem;    // 8px
+$spacing-md: 1rem;      // 16px
+$spacing-lg: 1.5rem;    // 24px
+$spacing-xl: 2rem;      // 32px
+$spacing-2xl: 3rem;     // 48px
+$spacing-3xl: 4rem;     // 64px
+$spacing-4xl: 6rem;     // 96px
+$spacing-5xl: 8rem;     // 128px
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-2xl: 24px;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
+$shadow-glow: 0 0 20px rgba($color-primary, 0.3);
+$shadow-glow-lg: 0 0 40px rgba($color-primary, 0.4);
+$shadow-glow-purple: 0 0 30px rgba($color-secondary, 0.3);
+
+// Glassmorphism
+$glass-bg: rgba(255, 255, 255, 0.03);
+$glass-border: rgba(255, 255, 255, 0.08);
+$glass-blur: 20px;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+$transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// Z-index layers
+$z-base: 1;
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal: 400;
+$z-popover: 500;
+$z-tooltip: 600;
+$z-loading: 1000;
+
+// Breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Container
+$container-max: 1400px;
+$container-padding: 1.5rem;
+
+// Grid
+$grid-columns: 12;
+$grid-gap: 2rem;

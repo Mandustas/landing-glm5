@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00F0FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2CBF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="#0A0A0F"/>
+  
+  <!-- Hexagon shape -->
+  <polygon 
+    points="50,10 85,30 85,70 50,90 15,70 15,30" 
+    fill="none" 
+    stroke="url(#grad)" 
+    stroke-width="3"
+    filter="url(#glow)"
+  />
+  
+  <!-- N letter -->
+  <text 
+    x="50" 
+    y="62" 
+    font-family="Arial Black, sans-serif" 
+    font-size="40" 
+    font-weight="900" 
+    fill="url(#grad)" 
+    text-anchor="middle"
+    filter="url(#glow)"
+  >N</text>
+  
+  <!-- Dot -->
+  <circle cx="75" cy="25" r="5" fill="#00F0FF" filter="url(#glow)"/>
+</svg>

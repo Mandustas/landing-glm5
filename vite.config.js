@@ -1,0 +1,37 @@
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  root: '.',
+  base: './',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    minify: 'terser',
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
+    }
+  },
+  server: {
+    port: 3000,
+    open: true,
+    cors: true
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "src/styles/variables" as *;`
+      }
+    }
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+      '@styles': '/src/styles',
+      '@scripts': '/src/scripts',
+      '@assets': '/src/assets'
+    }
+  }
+});
