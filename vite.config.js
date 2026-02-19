@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: '.',
-  base: './',
+  base: '/landing-glm5/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
